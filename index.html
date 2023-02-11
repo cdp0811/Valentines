@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="txt">Baby, will you be my Valentine?</div>
+            <div class="buttons">
+                <button id="yesbtn">Yes</button>
+                <button id="nobtn">No</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const element = document.getElementById("yesbtn");
+        element.addEventListener("click", Ales);
+        
+        function Ales(){
+            alert("Aba dapat lang hehe. See you soon!");
+        }
+
+        var b = document.getElementById("nobtn")
+        b.addEventListener("click", Crushie);
+
+        function Crushie(){
+            var baby = Math.floor(Math.random()*1000)+1;
+            var cute = Math.floor(Math.random()*700)+1;
+            b.style.left = baby + "px";
+            b.style.top = cute + "px";
+        }
+    </script>
+</body>
+</html>
+
+
